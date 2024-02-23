@@ -2,6 +2,7 @@ import '../App.css';
 import NavBar from '../components/NavBar';
 import CardItem from '../components/CardItem';
 import CardItem1 from '../components/CardItem1';
+import CardItem2 from '../components/CardItem2';
 import { Flex } from '@chakra-ui/react';
 const ShopPage = () =>{
     return (
@@ -19,11 +20,12 @@ const ShopPage = () =>{
                 flexWrap={'wrap'}
                 width={'90%'}
                 gap={'50px'}
-                mt={'50px'}
+                mt={'55px'}
             >
                 <CardItem/>
                
                 <CardItem1/>
+                <CardItem2/>
 
                 
             </Flex>

@@ -17,7 +17,7 @@ const CardItem =() =>{
             <Flex width ={'100%'} justify={'space-around'} align={'center'}>
                
                 <Flex width ={'50%'} >Цена: 20 руб.</Flex>
-                <Button width ={'30%'} colorScheme='yellow' >Заказать</Button>
+                <Button width ={'30%'}  color={'black'} background='rgb(225, 185, 133)'   >Заказать</Button>
             </Flex>
 
         </Card>
