@@ -1,9 +1,10 @@
 import '../App.css';
-import NavBar from '../components/NavBar';
+import NavBarMin from '../components/NavBarMin';
+import RegisterForm from '../components/RegisterForm';
 
 const RegisterPage =()=>{
     return(
-        <NavBar/>
+        <><NavBarMin /><RegisterForm /></>
     )
 }
 export default RegisterPage;
