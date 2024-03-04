@@ -5,7 +5,7 @@ import { Input,InputGroup,InputLeftElement,InputRightElement,Stack } from '@chak
 
 const RegisterForm = () =>{ 
     return (
-        <Flex mt={'100px'} ml={'40%'} width = {'20%'} height={'350px'}  boxShadow={'-1px 2px 14px -3px  black'} border-radius = {'10px'} borderRadius ={'8px'} justify ={'center'} align={'center'} >
+        <Flex mt={'20vh'} ml={'40%'} width = {'20%'} height={'350px'}  boxShadow={'-1px 2px 14px -3px  black'} border-radius = {'10px'} borderRadius ={'8px'} justify ={'center'} align={'center'} >
            
             <Flex width={'70%'} height ={'80%'} justify ={'center'} flexWrap={'wrap'}   >
 

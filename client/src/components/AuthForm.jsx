@@ -7,7 +7,7 @@ import {Link} from 'react-router-dom';
 
 const AuthForm = () =>{ 
     return (
-        <Flex mt={'100px'} ml={'40%'} width = {'20%'} height={'350px'}  boxShadow={'-1px 2px 14px -3px  black'} border-radius = {'10px'} borderRadius ={'8px'} justify ={'center'} align={'center'} >
+        <Flex mt={'20vh'} ml={'40%'} width = {'20%'} height={'350px'}  boxShadow={'-1px 2px 14px -3px  black'} border-radius = {'10px'} borderRadius ={'8px'} justify ={'center'} align={'center'} >
            
             <Flex width={'70%'} height ={'80%'} justify ={'center'} flexWrap={'wrap'}   >
 
@@ -44,7 +44,7 @@ const AuthForm = () =>{
                  <Flex
                     w={'100%'}
                  >
-                    <Text fontSize ='15px' mr={'15px'} >Нет аккаунта?</Text> 
+                    <Text fontSize ='15px' mr={'15px'} ml={'25px'} >Нет аккаунта?</Text> 
                     <Text  color={'rgb(225, 185, 133)'} ><Link to = {RegisterRoute}>Регистрация</Link></Text>
                  </Flex>
                  

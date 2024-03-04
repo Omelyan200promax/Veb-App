@@ -1,3 +1,18 @@
-    /* .{
-    color: rgb(201, 183, 159);
-}     */
+.toTop-btn{
+    position:absolute;
+    bottom:70px;
+    right:50px;
+    z-index: 9999;
+    border:none;
+    border-radius:50%;
+    box-shadow: 1px 1px 10px rgba(111, 106, 116, 0.808);
+    opacity: 0.8;
+    transition: all.3s ease-in-out;
+
+
+}
+.toTop-btn{
+    box-shadow : 1px 1px 40px rgb(182, 179, 187);
+    opasity: 1;
+
+}

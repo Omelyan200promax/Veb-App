@@ -16,9 +16,11 @@ const ShopPage = () =>{
             justify={'center'}
             width={'100%'}
             flexWrap={'wrap'}
+            
         >
             <NavBar/>
             <Flex
+              
                 flexWrap={'wrap'}
                 width={'90%'}
                 gap={'80px'}

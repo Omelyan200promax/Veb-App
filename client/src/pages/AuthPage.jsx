@@ -5,7 +5,9 @@ import AuthForm from '../components/AuthForm';
 
 const AuthPage =()=>{
     return(
-        <><NavBarMin /><AuthForm /></>
+        <Box height = {'100vh'}>
+            <><NavBarMin /><AuthForm /></>
+        </Box>
         
 
 
