@@ -59,10 +59,14 @@ const HomePage =()=>{
                 ></Image>
                 <Flex justify = {'right'} height = {'150px'} width = {'350px'} align = {'center'} s  position = {'absolute'} ml={'100px'} mt = {'340px'}  boxShadow={'0px 0px 15px 10px  rgb(225, 185, 133)'}><Text align ='center' fontSize ='24px' as ='b' >Заглядывай в "Книжного Червя" почаще и проводи время с пользой ! 😉 </Text></Flex>
                 
-                
-                <ToTopButton/>
-            
-                <Footer />
+                <Flex 
+                bottom={0}
+                >
+                        < ToTopButton/>
+                    
+                    <Footer />
+                </Flex>
+
             </>
    
 

@@ -13,8 +13,10 @@
 }
 .toTop-btn{
     box-shadow : 1px 1px 40px rgb(182, 179, 187);
-    opasity: 1;
-
+    /* opacity: 1;
+    bottom: 0;
+    right: 200;
+    position: absolute; */
 }
 body{
     font-family: "Roboto Slab", serif;

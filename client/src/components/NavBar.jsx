@@ -2,17 +2,45 @@ import '../App.css';
 import {Text, Box, Flex,Grid, Input,Heading,Button,ButtonGroup,img, color, backgrond } from '@chakra-ui/react';
 import {ShopRoute, HomeRoute,RegisterRoute,AuthRoute,AboutRoute, BooksRoute} from '../utils/consts';
 import {Link} from 'react-router-dom';
+import {useRef,useEffect, useState} from 'react';
 import colors from '../utils/colors';
 
 
 const NavBar= ()  =>{
     const {coffe,darkCoffe,brightBalck, mintWhite} = colors();
+    const prevScrollY = useRef(0);
+    const [isNavBarVisisble,setIsNavBarVisible] = useState (true);
+    useEffect(() => { 
+        const scroll = () =>{ 
+            const currentScrollY = window.scrollY; 
+            const scrollDirection = currentScrollY > prevScrollY.current ? "down" : "up"; 
+            if(scrollDirection === "down" && currentScrollY > 50){ 
+                setIsNavBarVisible(false) 
+            }else if(scrollDirection === "up" || currentScrollY <=50){ 
+                setIsNavBarVisible(true) 
+            } 
+            prevScrollY.current = currentScrollY; 
+        } 
+        window.addEventListener("scroll", scroll); 
+ 
+        return() => window.removeEventListener("scroll", scroll); 
+    }, []);
+
+
+    
     return (
         <Flex 
-        mt={'20px'}
+        top={'0px'}
+        mt ={'20px'}
         align={'center'}
         width ={'100%'}
         justify ={'space-around'}
+        position = 'fixed'
+        style ={
+            {opacity: isNavBarVisisble ? 1: 0,
+             transition: "opacity .3s ease-in-out"
+            }
+        }
         >
           <Link to = {HomeRoute} >  <Heading className = 'heading' ml={'5px'}>Bookworm</Heading></Link>
             <Flex width ={'30%'}
