@@ -1,8 +1,11 @@
-import {ShopRoute, HomeRoute, RegisterRoute, AuthRoute} from './utils/consts'; //добавляем пути??
+import {ShopRoute, HomeRoute, RegisterRoute, AuthRoute,AboutRoute, BooksRoute} from './utils/consts'; //добавляем пути??
 import ShopPage from './pages/ShopPage'; //добавляем страницу
 import HomePage from './pages/HomePage';
 import RegisterPage from './pages/RegisterPage';
 import AuthPage from './pages/AuthPage';
+import AboutPage from './pages/AboutPage';
+import BooksPage from './pages/BooksPage';
+
 
 export const publicRoutes = [
     {
@@ -21,7 +24,16 @@ export const publicRoutes = [
     {
         path:AuthRoute,
         Element:AuthPage
+    },
+    {
+        path:AboutRoute,
+        Element:AboutPage
+    },
+    {
+        path:BooksRoute,
+        Element:BooksPage
     }
+
 
 ];
 

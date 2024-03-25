@@ -1,6 +1,6 @@
 import '../App.css';
 import {Text, Box, Flex,Grid, Input,Heading,Button,ButtonGroup,img, color, backgrond } from '@chakra-ui/react';
-import {ShopRoute, HomeRoute,RegisterRoute,AuthRoute} from '../utils/consts';
+import {ShopRoute, HomeRoute,RegisterRoute,AuthRoute,AboutRoute, BooksRoute} from '../utils/consts';
 import {Link} from 'react-router-dom';
 import colors from '../utils/colors';
 
@@ -19,8 +19,8 @@ const NavBar= ()  =>{
             justify={'space-between'}
             >
                 <Link to ={ShopRoute}><Button color={'black'} background='rgb(225, 185, 133)'   >Магазин</Button></Link>
-                <Button color={'black'} background='rgb(225, 185, 133)'>О нас</Button>
-                <Button color={'black'} background='rgb(225, 185, 133)' >Книги</Button>
+                <Link to ={AboutRoute}><Button color={'black'} background='rgb(225, 185, 133)'>О нас</Button></Link>
+                <Link to ={BooksRoute}><Button color={'black'} background='rgb(225, 185, 133)' >Книги</Button></Link>
             </Flex>
             <Flex width ={'12%'}   justify={'space-around'}>
                 <Link to= {AuthRoute}><svg width="40" height="40" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

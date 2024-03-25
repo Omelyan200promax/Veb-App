@@ -28,7 +28,7 @@ const HomePage =()=>{
                     width ={'50%'}
                     height={'50%'}
                 ></Image>
-                <Flex justify ={'center'} align = {'center'} width = {'270px'} height = {'230px'} position = {'absolute'} mt ={'-330px'} ml ={'1400px'} boxShadow={'12px 10px 15px -2px  rgb(225, 185, 133) '}><Text  fontSize ='25px' as ='b' >Более 2000 книг на любой вкус и цвет 📚<br/> <br/>Выгодные акции еженедельно 💯 </Text></Flex>
+                <Flex justify ={'center'} align = {'center'} width = {'280px'} height = {'240px'} position = {'absolute'} mt ={'-350px'} ml ={'1400px'} boxShadow={'0px 0px 15px 10px  rgb(225, 185, 133) '}><Text align ='center   '  fontSize ='25px' as ='b' >Более 2000 книг на любой вкус и цвет 📚<br/> <br/>Выгодные акции еженедельно 💯 </Text></Flex>
                
 
                 <Image
@@ -40,7 +40,7 @@ const HomePage =()=>{
                     height={'60%'}
                 ></Image>
 
-                <Flex width = {'300px'}  position = {'absolute'} ml={'90px'} mt = {'300px'}  boxShadow={'-12px 10px 15px -2px  rgb(225, 185, 133) '} justify = {'right'} ><Text  fontSize ='25px' as ='b' align ='center'>Книги любых жанров. Учебные пособия для всех возрастов. Редкие экземпляры. Найдите то, что нужно вам!  </Text></Flex>
+                <Flex width = {'300px'} height = {'250px'} align = {'center'} position = {'absolute'} ml={'90px'} mt = {'300px'}  boxShadow={'0px 0px 15px 10px  rgb(225, 185, 133)'} justify = {'right'} ><Text  fontSize ='25px' as ='b' align ='center'>Книги любых жанров. Учебные пособия для всех возрастов. Редкие экземпляры. Найдите то, что нужно вам!  </Text></Flex>
                  <Image
                    
                     mt ={'86vh'}
@@ -48,7 +48,7 @@ const HomePage =()=>{
                     width ={'55%'}
                     height={'50%'}
                 ></Image>
-                <Box width = {'310px'}  position = {'absolute'}   mt ={'-300px'} ml ={'1400px'}  boxShadow={'12px 10px 15px -2px  rgb(225, 185, 133) '}><Text  fontSize ='25px' as ='b'>Наш адрес:<br/> ул. Советская 54, г. Брест </Text></Box>
+                <Flex justify = {'center'} width = {'320px'} height = {'120px'} align = {'center'}   position = {'absolute'}   mt ={'-290px'} ml ={'1400px'}  boxShadow={'0px 0px 15px 10px  rgb(225, 185, 133)'}><Text align ='center'  fontSize ='25px' as ='b'>Наш адрес:<br/> ул. Советская 54, г. Брест </Text></Flex>
                  <Image
                     position = {'absolute'}
                     right ={'0'}
@@ -57,7 +57,7 @@ const HomePage =()=>{
                     width ={'75%'}
                     height={'60%'}
                 ></Image>
-                <Flex justify = {'right'} width = {'350px'}   position = {'absolute'} ml={'100px'} mt = {'340px'}  boxShadow={'-12px 10px 15px -2px  rgb(225, 185, 133) '}><Text fontSize ='24px' as ='b' align ='center'>Заглядывай в "Книжного Червя" почаще и проводи время с пользой ! 😉 </Text></Flex>
+                <Flex justify = {'right'} height = {'150px'} width = {'350px'} align = {'center'} s  position = {'absolute'} ml={'100px'} mt = {'340px'}  boxShadow={'0px 0px 15px 10px  rgb(225, 185, 133)'}><Text align ='center' fontSize ='24px' as ='b' >Заглядывай в "Книжного Червя" почаще и проводи время с пользой ! 😉 </Text></Flex>
                 
                 
                 <ToTopButton/>

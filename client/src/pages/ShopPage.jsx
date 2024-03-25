@@ -8,7 +8,7 @@ import CardItem4 from '../components/CardItem4';
 import { Flex } from '@chakra-ui/react';
 const ShopPage = () =>{
     return (
-        <Flex
+        <Flex 
             // overflow ={'visible'}
             // flexwrap={'wrap'}
             // gap ={'35%'}
@@ -19,6 +19,7 @@ const ShopPage = () =>{
             
         >
             <NavBar/>
+            
             <Flex
               
                 flexWrap={'wrap'}
