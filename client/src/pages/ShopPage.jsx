@@ -5,6 +5,12 @@ import CardItem1 from '../components/CardItem1';
 import CardItem2 from '../components/CardItem2';
 import CardItem3 from '../components/CardItem3';
 import CardItem4 from '../components/CardItem4';
+import CardItem5 from '../components/CardItem5';
+import CardItem6 from '../components/CardItem6';
+import CardItem7 from '../components/CardItem7';
+import CardItem8 from '../components/CardItem8';
+import CardItem9 from '../components/CardItem9';
+
 import { Flex } from '@chakra-ui/react';
 const ShopPage = () =>{
     return (
@@ -16,16 +22,17 @@ const ShopPage = () =>{
             justify={'center'}
             width={'100%'}
             flexWrap={'wrap'}
+            id = "shop"
             
         >
             <NavBar/>
             
             <Flex
-              
+                
                 flexWrap={'wrap'}
                 width={'90%'}
                 gap={'80px'}
-                mt={'55px'}
+                mt={'130px'}
             >
                 <CardItem/>
                
@@ -33,6 +40,10 @@ const ShopPage = () =>{
                 <CardItem2/>
                 <CardItem3/>
                 <CardItem4/>
+                <CardItem5/>
+                <CardItem6/>
+                <CardItem7/>
+
 
 
                 

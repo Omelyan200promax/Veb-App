@@ -1,6 +1,7 @@
 import '../App.css';
 import NavBar from '../components/NavBar';
 import {Flex,Heading,Button,Link, Image, Box, Text} from '@chakra-ui/react';
+import {useRef,useEffect, useState} from 'react';
 import Footer from  '../components/Footer';
 import colors from '../utils/colors';
 import ToTopButton from '../components/ToTopButton';
@@ -8,12 +9,26 @@ import osnova from '../pages/osnova.jpg';
 import books from '../pages/books.jpg';
 import books2 from '../pages/books2.jpg'
 import books3 from '../pages/books3.jpg'
+import Loader from '../components/Loader'
 
 
 const HomePage =()=>{
-    
+    const [isLoading, setIsLoading] = useState(true);
+    useEffect (()=> {
+        const fetchData = async () =>{
+            await new Promise(resolve => setTimeout (resolve, 1000));
+            setIsLoading(false)
+
+
+        }
+        fetchData();
+    }, [])
     const {coffe,darkCoffe,brightBalck, mintWhite} = colors();
     return(
+        <>
+           {isLoading ? (
+                <Loader />
+            ) : (
         <Box height={'100vh' } >
             <>
                 <NavBar />
@@ -62,7 +77,7 @@ const HomePage =()=>{
                 <Flex 
                 bottom={0}
                 >
-                        < ToTopButton/>
+                        {/* < ToTopButton/> */}
                     
                     <Footer />
                 </Flex>
@@ -73,6 +88,9 @@ const HomePage =()=>{
 
 
         </Box>
+        )}
+    </>
+        
          )
 }
 export default HomePage;

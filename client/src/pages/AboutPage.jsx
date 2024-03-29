@@ -5,7 +5,7 @@ import MnogoKnig  from '../pages/AboutPageImg/mnogoknig.jpg';
 
 const AboutPage =()=>{
     return(
-        <Box  margin ='0'>
+        <Box  margin ='0' id = 'about_us'>
            <NavBarMin />
            <Flex justify ="center"   flexWrap={'wrap'}
                 width={'100%'}

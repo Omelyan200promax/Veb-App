@@ -4,12 +4,26 @@ import {ShopRoute, HomeRoute,RegisterRoute,AuthRoute,AboutRoute, BooksRoute} fro
 import {Link} from 'react-router-dom';
 import {useRef,useEffect, useState} from 'react';
 import colors from '../utils/colors';
+import {useLocation} from 'react-router-dom'
 
 
 const NavBar= ()  =>{
     const {coffe,darkCoffe,brightBalck, mintWhite} = colors();
     const prevScrollY = useRef(0);
     const [isNavBarVisisble,setIsNavBarVisible] = useState (true);
+    const location = useLocation();
+
+    // useEffect(()=>{
+    //     const scrollToSection = window.location.hash.substring(1);
+    //     if (scrollToSection){
+    //         const section = document.getElementByID(scrollToSection)
+    //         if (section){
+    //             section.scrollIntoView({
+    //                 behavior: "smooth"   
+    //             })
+    //         }
+    //     }
+    // }, [window.location.hash])
     useEffect(() => { 
         const scroll = () =>{ 
             const currentScrollY = window.scrollY; 
@@ -46,7 +60,7 @@ const NavBar= ()  =>{
             <Flex width ={'30%'}
             justify={'space-between'}
             >
-                <Link to ={ShopRoute}><Button color={'black'} background='rgb(225, 185, 133)'   >Магазин</Button></Link>
+               <Link to ={ShopRoute}><Button color={'black'} background='rgb(225, 185, 133)'>Магазин</Button></Link>
                 <Link to ={AboutRoute}><Button color={'black'} background='rgb(225, 185, 133)'>О нас</Button></Link>
                 <Link to ={BooksRoute}><Button color={'black'} background='rgb(225, 185, 133)' >Книги</Button></Link>
             </Flex>
