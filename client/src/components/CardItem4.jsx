@@ -1,7 +1,7 @@
 import "../App.css";
 import {Flex,Heading,Button,Link, Image, Box} from '@chakra-ui/react';
 import {Card,CardHeading,CardBody,CardFooter} from '@chakra-ui/react';
-import Obl  from '../components/Obl.webp'
+import Obl  from '../components/ImgComp/Obl.webp'
 
 const CardItem4 =() =>{
     return(

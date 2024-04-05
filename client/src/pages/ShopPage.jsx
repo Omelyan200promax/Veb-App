@@ -1,5 +1,7 @@
 import '../App.css';
 import NavBar from '../components/NavBar';
+import {useRef,useEffect, useState} from 'react';
+import Loader from '../components/Loader'
 import CardItem from '../components/CardItem';
 import CardItem1 from '../components/CardItem1';
 import CardItem2 from '../components/CardItem2';
@@ -13,7 +15,23 @@ import CardItem9 from '../components/CardItem9';
 
 import { Flex } from '@chakra-ui/react';
 const ShopPage = () =>{
+
+    // const [isLoading, setIsLoading] = useState(true);
+    // useEffect (()=> {
+    //     const fetchData = async () =>{
+    //         await new Promise(resolve => setTimeout (resolve, 800));
+    //         setIsLoading(false)
+
+
+    //     }
+    //     fetchData();
+    // }, [])
+    
     return (
+        // <>
+        //    {isLoading ? (
+        //         <Loader />
+        //     ) : (
         <Flex 
             // overflow ={'visible'}
             // flexwrap={'wrap'}
@@ -25,6 +43,9 @@ const ShopPage = () =>{
             id = "shop"
             
         >
+        
+        
+   
             <NavBar/>
             
             <Flex
@@ -43,6 +64,8 @@ const ShopPage = () =>{
                 <CardItem5/>
                 <CardItem6/>
                 <CardItem7/>
+                <CardItem8/>
+                <CardItem9/>
 
 
 
@@ -52,6 +75,8 @@ const ShopPage = () =>{
             
            
         </Flex>
+    //     )}
+    // </>
 
     )
 }

@@ -1,7 +1,7 @@
 import "../App.css";
 import {Flex,Heading,Button,Link, Image, Box} from '@chakra-ui/react';
 import {Card,CardHeading,CardBody,CardFooter} from '@chakra-ui/react';
-import MasterAndMargarita from '../components/MaM.jpg'
+import MasterAndMargarita from '../components/ImgComp/MaM.jpg'
 
 const CardItem1 =() =>{
     return(

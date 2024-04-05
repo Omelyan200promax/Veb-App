@@ -6,17 +6,17 @@ import {Link} from 'react-router-dom';
 const Footer = ()=> {
     return (
         <Flex 
-            mt={'90vh'}
+            mt={'40vh'}
             ml={'33.3%'}
             width = {'30%'}
             height = {'70px'}
             justify ={'space-around'}
             align ={'center'}
         >
-          <Link ><Text><b>BookWorm 2024</b></Text></Link>
+          <Link ><Text fontSize = {'20px'}><b>BookWorm 2024</b></Text></Link>
          
-          <Link to ={NewsRoute}><Text><b>Новости</b></Text></Link>
-          <Link to ={ContactsRoute}><Text><b>Контакты</b></Text></Link>
+          <Link to ={NewsRoute}><Text fontSize = {'20px'}><b>Новости</b></Text></Link>
+          <Link to ={ContactsRoute}><Text fontSize = {'20px'}><b>Контакты</b></Text></Link>
         </Flex>
 
 

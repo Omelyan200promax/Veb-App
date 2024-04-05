@@ -29,55 +29,71 @@ const HomePage =()=>{
            {isLoading ? (
                 <Loader />
             ) : (
-        <Box height={'100vh' } >
+        <Box >
+            {/* height={'150vh' }  */}
             <>
                 <NavBar />
                 {/* СДЕЛАТЬ ПЕРЕМЕННЫЕ С КАРТИНКАМИ КАК В CARDINEM */}
                 {/* <Image> src= {osnova}</Image>
                 <Image> src= {books}</Image> */}
                
-                <Image
-                    mt ={'15vh'}
+                <Flex mt = {'20vh'}  align = {'center'}><Image
+                    
                    
                     src ={osnova}
                     width ={'50%'}
                     height={'50%'}
                 ></Image>
-                <Flex justify ={'center'} align = {'center'} width = {'280px'} height = {'240px'} position = {'absolute'} mt ={'-350px'} ml ={'1400px'} boxShadow={'0px 0px 15px 10px  rgb(225, 185, 133) '}><Text align ='center   '  fontSize ='25px' as ='b' >Более 2000 книг на любой вкус и цвет 📚<br/> <br/>Выгодные акции еженедельно 💯 </Text></Flex>
+                <Flex justify ={'center'} align = {'center'} width = {'280px'} height = {'240px'}  ml ={'20%'}   boxShadow={'0px 0px 15px 10px  rgb(225, 185, 133) '}><Text align ='center   'fontSize ='25px' as ='b' >Более 2000 книг на любой вкус и цвет 📚<br/> <br/>Выгодные акции еженедельно 💯 </Text></Flex>
+                </Flex>
+              
                
 
-                <Image
-                     position = {'absolute'}
-                     right ={'0'}
-                    mt ={'13vh'}
+                <Flex mt = {'20vh'} justify ={'space-between'} align = {'center'} >
+                    <Flex ml = {'5%'}  width = {'300px'} height = {'250px'} align = {'center'}   boxShadow={'0px 0px 15px 10px  rgb(225, 185, 133)'} justify = {'right'} ><Text  fontSize ='25px' as ='b' align ='center'>Книги любых жанров. Учебные пособия для всех возрастов. Редкие экземпляры. Найдите то, что нужно вам!  </Text></Flex>
+                    
+                    <Image
+                     
                     src ={books}
                     width ={'75%'}
                     height={'60%'}
                 ></Image>
 
-                <Flex width = {'300px'} height = {'250px'} align = {'center'} position = {'absolute'} ml={'90px'} mt = {'300px'}  boxShadow={'0px 0px 15px 10px  rgb(225, 185, 133)'} justify = {'right'} ><Text  fontSize ='25px' as ='b' align ='center'>Книги любых жанров. Учебные пособия для всех возрастов. Редкие экземпляры. Найдите то, что нужно вам!  </Text></Flex>
-                 <Image
+                
+                </Flex>
+
+                
+
+
+
+
+
+                 <Flex  mt = {'20vh'}  align = {'center'}  ><Image
                    
-                    mt ={'86vh'}
+                  
                     src ={books2}
                     width ={'55%'}
                     height={'50%'}
                 ></Image>
-                <Flex justify = {'center'} width = {'320px'} height = {'120px'} align = {'center'}   position = {'absolute'}   mt ={'-290px'} ml ={'1400px'}  boxShadow={'0px 0px 15px 10px  rgb(225, 185, 133)'}><Text align ='center'  fontSize ='25px' as ='b'>Наш адрес:<br/> ул. Советская 54, г. Брест </Text></Flex>
-                 <Image
-                    position = {'absolute'}
-                    right ={'0'}
-                    mt = {'130px'}
-                    src ={books3}
-                    width ={'75%'}
-                    height={'60%'}
-                ></Image>
-                <Flex justify = {'right'} height = {'150px'} width = {'350px'} align = {'center'} s  position = {'absolute'} ml={'100px'} mt = {'340px'}  boxShadow={'0px 0px 15px 10px  rgb(225, 185, 133)'}><Text align ='center' fontSize ='24px' as ='b' >Заглядывай в "Книжного Червя" почаще и проводи время с пользой ! 😉 </Text></Flex>
+                <Flex justify = {'center'} width = {'320px'} height = {'120px'} align = {'center'}  ml = {'15%'}  boxShadow={'0px 0px 15px 10px  rgb(225, 185, 133)'}><Text align ='center'  fontSize ='25px' as ='b'>Наш адрес:<br/> ул. Советская 54, г. Брест </Text></Flex>
+                </Flex>
+
+
+                <Flex   mt = {'20vh'}  align = {'center'} justify ={'space-between'}> 
+                    <Flex justify = {'right'} height = {'150px'} width = {'350px'} align = {'center'} ml = {'3%'}    boxShadow={'0px 0px 15px 10px  rgb(225, 185, 133)'}><Text align ='center' fontSize ='24px' as ='b' >Заглядывай в "Книжного Червя" почаще и проводи время с пользой ! 😉 </Text></Flex> 
+
+                    <Image
+                    
+                        src ={books3}
+                        width ={'75%'}
+                        height={'60%'}
+                    ></Image>
+                                </Flex>
                 
                 <Flex 
                 bottom={0}
                 >
-                        {/* < ToTopButton/> */}
+                         < ToTopButton/> 
                     
                     <Footer />
                 </Flex>

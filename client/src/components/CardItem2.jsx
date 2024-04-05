@@ -1,7 +1,7 @@
 import "../App.css";
 import {Flex,Heading,Button,Link, Image, Box} from '@chakra-ui/react';
 import {Card,CardHeading,CardBody,CardFooter} from '@chakra-ui/react';
-import DeadSouls from '../components/scale_1200.jfif'
+import DeadSouls from '../components/ImgComp/scale_1200.jfif'
 
 const CardItem2 =() =>{
     return(

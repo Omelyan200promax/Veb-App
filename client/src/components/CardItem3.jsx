@@ -1,7 +1,7 @@
 import "../App.css";
 import {Flex,Heading,Button,Link, Image, Box} from '@chakra-ui/react';
 import {Card,CardHeading,CardBody,CardFooter} from '@chakra-ui/react';
-import FaC  from '../components/FaC.jpg'
+import FaC  from '../components/ImgComp/FaC.jpg'
 
 const CardItem3 =() =>{
     return(

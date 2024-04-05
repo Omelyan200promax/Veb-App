@@ -1,7 +1,7 @@
 import "../App.css";
 import {Flex,Heading,Button,Link, Image, Box} from '@chakra-ui/react';
 import {Card,CardHeading,CardBody,CardFooter} from '@chakra-ui/react';
-import DostoevskiBook from '../components/3540.jpg'
+import DostoevskiBook from '../components/ImgComp/3540.jpg'
 const CardItem =() =>{
     return(
         <Card width ={'280px'} height={'300px'} boxShadow={'-1px 2px 14px -3px  black'} borderRadius ={'8px'} >
