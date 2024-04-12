@@ -41,6 +41,7 @@ const ShopPage = () =>{
             width={'100%'}
             flexWrap={'wrap'}
             id = "shop"
+            // ml = {'0px'}
             
         >
         
@@ -49,7 +50,7 @@ const ShopPage = () =>{
             <NavBar/>
             
             <Flex
-                
+                // justify = {'center'}
                 flexWrap={'wrap'}
                 width={'90%'}
                 gap={'80px'}
