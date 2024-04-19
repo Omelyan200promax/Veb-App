@@ -6,12 +6,14 @@ const PORT = process.env.PORT;
 const app  = express();
 const baseURL = process.env.LOCAL_CLIENT_URL;
 app.use (express.json());
-app.use (cookieParser);
+app.use (cookieParser());
+app.use('/api', router);
 app.use(cors({credentials:true, origin: baseURL}));
 const mongoose = require ('mongoose');
 const options = {
     dbName: 'bookworm'
 }
+
 const router = require('./router/index')
 
 const start = async () => {
