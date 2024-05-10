@@ -38,7 +38,8 @@ class UserService {
         if (!user){
             // console.log('user not found');
             throw new Error ('User not found');
-        }const isPassEquals = await bcrypt.compare(password, user.password);
+        }
+        const isPassEquals = await bcrypt.compare(password, user.password);
         if (isPassEquals = false){
             throw new Error("Неверный пароль")
         }const userDto =new UserDto(user);
@@ -47,8 +48,14 @@ class UserService {
         return {...tokens,user:userDto}
     }
     async logout (refreshToken){
-        
+        const token = await tokenService.removeToken(refreshToken);
+        return token;
     };
+    async refresh (refreshToken){
+        if (!refreshToken){
+            throw new Error ("Не авторизованный пользователь")
+        }    }
+
     
 }
 module.exports = new UserService();
