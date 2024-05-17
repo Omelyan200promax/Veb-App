@@ -10,6 +10,7 @@ import books from '../pages/books.jpg';
 import books2 from '../pages/books2.jpg'
 import books3 from '../pages/books3.jpg'
 import Loader from '../components/Loader'
+import {observer} from "mobx-react-lite"
 
 
 const HomePage =()=>{
@@ -109,4 +110,4 @@ const HomePage =()=>{
         
          )
 }
-export default HomePage;
+export default observer(HomePage);

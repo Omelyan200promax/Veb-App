@@ -6,3 +6,4 @@ export const AboutRoute = '/about_us';
 export const BooksRoute = '/books';
 export const NewsRoute = '/news';
 export const ContactsRoute = '/contacts';
+export const LOCAL_API_URL = "http://localhost:5000/api"

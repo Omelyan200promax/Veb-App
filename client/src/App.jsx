@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage';
 import ShopPage from './pages/ShopPage';
 import AppRouter from './components/AppRouter';
 import { BrowserRouter } from 'react-router-dom';
+import {observer} from "mobx-react-lite"
 
 
 
@@ -19,4 +20,4 @@ function App() {
   );
 }
 
-export default App;
+export default observer( App);

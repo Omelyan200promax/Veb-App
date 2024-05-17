@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom';
 import {useRef,useEffect, useState} from 'react';
 import colors from '../utils/colors';
 import {useLocation} from 'react-router-dom'
+import {observer} from "mobx-react-lite"
 
 
 const NavBar= ()  =>{
@@ -78,4 +79,4 @@ const NavBar= ()  =>{
         
     );
 } ;
-export default NavBar; 
+export default observer (NavBar); 

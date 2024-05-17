@@ -22,7 +22,7 @@ const AuthForm = () =>{
                         </svg>
                         </InputLeftElement>
 
-                        <Input type='email' placeholder='E-mail' />
+                        <Input type='email' placeholder='E-mail' onChange = {e => setEmail(e.target.value)} value = {email} />
                     </InputGroup>
 
                     <InputGroup  border={'5px black'}>
@@ -35,12 +35,12 @@ const AuthForm = () =>{
                             </g>
                         </svg>
                         </InputLeftElement>
-                        <Input type = 'password' placeholder='Пароль' color ={'rgb(225, 185, 133)'} />
+                        <Input type = 'password' placeholder='Пароль' color ={'rgb(225, 185, 133)'}  onChange = {e => setPassword(e.target.value)} value = {password} />
                         
                     </InputGroup>
                    
                  </Stack>
-                 <Button width ={'40%'}  color={'black'} background='rgb(225, 185, 133)'   >Войти</Button>
+                 <Button width ={'40%'}  color={'black'} background='rgb(225, 185, 133)' onClick={()=>handleLogin(email,password)}  >Войти</Button>
                  <Flex
                     w={'100%'}
                  >
